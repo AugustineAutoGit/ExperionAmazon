@@ -1,0 +1,127 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-19T08:46:27.694Z",
+        "before": [
+          {
+            "result": {
+              "duration": 29470270100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Hooks.launchApplication()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify the user is able to purchase a product",
+        "description": "",
+        "id": "purchase-a-product-from-amazon-app;verify-the-user-is-able-to-purchase-a-product",
+        "after": [
+          {
+            "result": {
+              "duration": 3996800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 327003500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10133085100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User searches for \"samsung 65 inch tv\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"samsung 65 inch tv\"",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.AmazonPurchaseSteps.user_searches_for(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2401021200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User selects the product from the search results",
+            "match": {
+              "location": "StepDefinitions.AmazonPurchaseSteps.user_selects_the_product_from_the_search_results()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6482015100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters the pincode \"683513\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"683513\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.AmazonPurchaseSteps.user_enters_the_pincode(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13307158700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User adds the product into the cart",
+            "match": {
+              "location": "StepDefinitions.AmazonPurchaseSteps.user_adds_the_product_into_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2821023400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Product is added to the Cart",
+            "match": {
+              "location": "StepDefinitions.AmazonPurchaseSteps.product_is_added_to_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Purchase a Product from Amazon App",
+    "description": "",
+    "id": "purchase-a-product-from-amazon-app",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/AmazonPurchase.feature",
+    "tags": []
+  }
+]
